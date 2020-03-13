@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/jquery-1.12.0.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="zankinPrint">
+    <div class="jibunBank bankPrint" id="jibun">
+      <p class="leftCredit">じぶん</p>
+      <p class="jibunCredit centerCredit">********</p>
+      <p class="rightCredit">円</p>
+    </div>
+    <div class="mitsuiBank bankPrint" id="mitsui">
+      <p class="leftCredit">三井住友</p>
+      <p class="mitsuiCredit centerCredit">********</p>
+      <p class="rightCredit">円</p>
+    </div>
+    <div class="yuuchoBank bankPrint" id="yuucho">
+      <p class="leftCredit">ゆうちょ</p>
+      <p class="yuuchoCredit centerCredit">********</p>
+      <p class="rightCredit">円</p>
+    </div>
+    <div class="kitakyuBank bankPrint" id="kitakyu">
+      <p class="leftCredit">楽天</p>
+      <p class="kitakyuCredit centerCredit">********</p>
+      <p class="rightCredit">円</p>
+    </div>
+  </div>
+  <div class="moveCreditPrint">
+    <div class="selArea">
+      <select class="outcomeSel">
+        <option value="income">移動元</option>
+        <option value="jibun">じぶん</option>
+        <option value="mitsui">三井住友</option>
+        <option value="yuucho">ゆうちょ</option>
+        <option value="kitakyu">楽天</option>
+      </select>
+      から
+      <select class="incomeSel">
+        <option value="outcome">移動先</option>
+        <option value="jibun">じぶん</option>
+        <option value="mitsui">三井住友</option>
+        <option value="yuucho">ゆうちょ</option>
+        <option value="kitakyu">楽天</option>
+      </select>
+      へ
+    </div>
+    理由：<input class="category"><br>
+    金額：<input type = "number" class="moveprice">円
+    <button class="registerBtn">登録</button>
+  </div>
+  <div class="historyPrint">
+    <table>
+      <thead>
+        <tr>
+          <td class="history_date">日付</td>
+          <td class="history_out">移動元</td>
+          <td class="history_in">移動先</td>
+          <td class="history_price">金額</td>
+          <td class="history_reason">用途</td>
+        </tr>
+      </thead>
+      <tbody class="history_tbody">
+        <tr class="tbody_tr">
+          <td class="history_date">19/03/25</td>
+          <td class="history_out mitsuiBank"></td>
+          <td class="history_in jibunBank">じぶんん</td>
+          <td class="history_price">1500000</td>
+          <td class="history_reason">給与だよおおおお</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

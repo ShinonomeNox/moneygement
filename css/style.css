@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+/* line 12, ../sass/style.scss */
+body, .bankPrint p, .historyPrint {
+  margin: 0;
+}
+
+/* line 16, ../sass/style.scss */
+body, .bankPrint p, .historyPrint {
+  padding: 0;
+}
+
+/* line 20, ../sass/style.scss */
+.bankPrint .centerCredit {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* line 26, ../sass/style.scss */
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 36, ../sass/style.scss */
+.zankinPrint {
+  margin-top: 10px;
+}
+
+/* line 40, ../sass/style.scss */
+.bankPrint {
+  height: 50px;
+  color: #f7f7f7;
+  font-size: 28px;
+  font-weight: 800;
+}
+/* line 46, ../sass/style.scss */
+.bankPrint p {
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+}
+/* line 53, ../sass/style.scss */
+.bankPrint .leftCredit {
+  width: 35%;
+  margin-left: 5px;
+}
+/* line 58, ../sass/style.scss */
+.bankPrint .centerCredit {
+  -webkit-text-stroke: 0;
+  width: 50%;
+  text-align: right;
+  font-size: 36px;
+}
+/* line 66, ../sass/style.scss */
+.bankPrint .rightCredit {
+  width: 5%;
+}
+
+/* line 71, ../sass/style.scss */
+.incomeSel,
+.outcomeSel {
+  margin-top: 5px;
+  width: 120px;
+  height: 25px;
+  font-size: 18px;
+}
+
+/* line 79, ../sass/style.scss */
+.registerBtn {
+  width: 100px;
+}
+
+/* line 83, ../sass/style.scss */
+.historyPrint {
+  background-color: #fffbcc;
+  height: 53vh;
+  width: 100%;
+  font-size: 13px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* line 93, ../sass/style.scss */
+.historyPrint table {
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 97, ../sass/style.scss */
+.historyPrint table .history_date {
+  width: 48px;
+  min-width: 48px;
+  max-width: 48px;
+}
+/* line 103, ../sass/style.scss */
+.historyPrint table .history_in,
+.historyPrint table .history_out {
+  width: 52px;
+  min-width: 52px;
+  max-width: 52px;
+  text-align: center;
+}
+/* line 111, ../sass/style.scss */
+.historyPrint table .history_reason {
+  width: 110px;
+  min-width: 110px;
+  max-width: 110px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 120, ../sass/style.scss */
+.historyPrint table .history_price {
+  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
+}
+
+/* line 128, ../sass/style.scss */
+.jibunBank {
+  background-color: #ffc634;
+}
+
+/* line 132, ../sass/style.scss */
+.mitsuiBank {
+  background-color: #c1e96b;
+}
+
+/* line 136, ../sass/style.scss */
+.yuuchoBank {
+  background-color: #00e27c;
+}
+
+/* line 140, ../sass/style.scss */
+.kitakyuBank {
+  background-color: #41c6ff;
+}
+
+/* line 144, ../sass/style.scss */
+.income {
+  color: #252eff;
+}
+
+/* line 148, ../sass/style.scss */
+.outcome {
+  color: #f22300;
+}
+
+/*# sourceMappingURL=style.css.map */

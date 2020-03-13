@@ -1,0 +1,150 @@
+$BankOrange: rgb(255, 198, 52);
+$BankLightgreen: rgb(193, 233, 107);
+$BankDeepGreen: rgb(0, 226, 124);
+$BankBlue: rgb(65, 198, 255);
+$fontWhite: rgb(247, 247, 247);
+$hutiBlack: rgb(65, 65, 65);
+$historyBG: rgb(255, 251, 204);
+$incomeBlue: rgb(37, 46, 255);
+$outcomeRed: rgb(242, 35, 0);
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+%ZeroMargin {
+  margin: 0;
+}
+
+%ZeroPadding {
+  padding: 0;
+}
+
+%YCenterMargin {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+//main CSS
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  @extend %ZeroMargin;
+  @extend %ZeroPadding;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.zankinPrint {
+  margin-top: 10px;
+}
+
+.bankPrint {
+  height: 50px;
+  color: $fontWhite;
+  font-size: 28px;
+  font-weight: 800;
+
+  p {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    @extend %ZeroMargin;
+    @extend %ZeroPadding;
+  }
+
+  .leftCredit {
+    width: 35%;
+    margin-left: 5px;
+  }
+
+  .centerCredit {
+    -webkit-text-stroke: 0;
+    width: 50%;
+    text-align: right;
+    @extend %YCenterMargin;
+    font-size: 36px;
+  }
+
+  .rightCredit {
+    width: 5%;
+  }
+}
+
+.incomeSel,
+.outcomeSel {
+  margin-top: 5px;
+  width: 120px;
+  height: 25px;
+  font-size: 18px;
+}
+
+.registerBtn {
+  width: 100px;
+}
+
+.historyPrint {
+  background-color: $historyBG;
+  height: 53vh;
+  width: 100%;
+  font-size: 13px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  @extend %ZeroMargin;
+  @extend %ZeroPadding;
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+
+    .history_date {
+      width: 48px;
+      min-width: 48px;
+      max-width: 48px;
+    }
+
+    .history_in,
+    .history_out {
+      width: 52px;
+      min-width: 52px;
+      max-width: 52px;
+      text-align: center;
+    }
+
+    .history_reason {
+      width: 110px;
+      min-width: 110px;
+      max-width: 110px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .history_price {
+      width: 50px;
+      min-width: 50px;
+      max-width: 50px;
+    }
+  }
+}
+
+.jibunBank {
+  background-color: $BankOrange;
+}
+
+.mitsuiBank {
+  background-color: $BankLightgreen;
+}
+
+.yuuchoBank {
+  background-color: $BankDeepGreen;
+}
+
+.kitakyuBank {
+  background-color: $BankBlue;
+}
+
+.income {
+  color: $incomeBlue;
+}
+
+.outcome {
+  color: $outcomeRed;
+}
